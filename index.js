@@ -7,7 +7,7 @@ Handlebars.registerHelper('displayIngredient', function () {
 Handlebars.registerPartial('recipeFormPartial', document.getElementById('recipe-form-template'))
 Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial'))
 var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
+document.getElementsByTagName("main")[0].innerHTML += template({'submitAction': 'createRecipe()'})
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
