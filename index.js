@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function displayEditForm() {
- let formTemplate = Handlebars.compile(document.getElementById('recipe-form-template'))
+ let formTemplate = Handlebars.compile(document.getElementById('recipe-form-template').innerHTML)
  let html = formTemplate({function: 'updateRecipe()'})
  document.getElementsByTagName("main")[0].innerHTML += html
 }
