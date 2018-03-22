@@ -9,8 +9,9 @@
   <body>
     <main id="main">
       <script id="recipe-template" type="text/x-handlebars-template">
-        <h2>{{name}}</h2>
-+        {{> recipeDetailsPartial}}
+        <article>
++        <header><h2>{{name}}</h2></header>
++        <div>{{> recipeDetailsPartial}}</div>
 +        <footer><a href="#" onClick="displayEditForm();">Edit Recipe</a></footer>
 +      </article>
 +    </script>
